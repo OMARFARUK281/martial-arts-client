@@ -1,0 +1,99 @@
+ [
+      {
+        "id": 1,
+        "name": "Karate",
+        "course": "Striking",
+        "image": "https://img.freepik.com/free-photo/karate-player-performing-karate-stance_107420-65055.jpg?w=740&t=st=1686193263~exp=1686193863~hmac=a6158e2cba80630078d9d480c74042eef8df699fd74266c433edb483e7bf1183",
+        "category": "Traditional",
+        "price": "$99.99"
+      },
+      {
+        "id": 2,
+        "name": "Taekwondo",
+        "course": "Striking",
+        "image": "https://img.freepik.com/free-photo/full-length-portrait-two-professional-taekwondo-feale-athletes-fighting-isolated-white-background_155003-45449.jpg?w=1380&t=st=1686193387~exp=1686193987~hmac=dc89f4d7882408c24cac7a00a5d308aa32cc4b55b92ba3438aeebe5aee01bf18",
+        "category": "Traditional",
+        "price": "$89.99"
+      },
+      {
+        "id": 3,
+        "name": "Brazilian Jiu",
+        "course": "Grappling",
+        "image": "https://img.freepik.com/free-photo/two-young-judo-fighters-kimono-training-martial-arts-gym-with-expression-action-motion_155003-32869.jpg?w=1380&t=st=1686193471~exp=1686194071~hmac=d004602f7685541c46fa2a6d52bc6f4d4bd9ffa0a1df8f9a594e8f135e5291f8",
+        "category": "Artistic",
+        "price": "$109.99"
+      },
+      {
+        "id": 4,
+        "name": "Muay Thai",
+        "course": "Striking",
+        "image": "https://img.freepik.com/free-photo/mma-two-professional-fighters-punching-boxing-isolated-blue-wall-neon_155003-15575.jpg?w=1380&t=st=1686193548~exp=1686194148~hmac=727ba842c11cc5f06072d79bd37bd0aa2c8198a01cf9c1410ec4d2594b01ca58",
+        "category": "Stand",
+        "price": "$94.99"
+      },
+      {
+        "id": 5,
+        "name": "Boxing",
+        "course": "Striking",
+        "image": "https://img.freepik.com/free-photo/two-professional-boxer-boxing-black-smoky_155003-14261.jpg?w=1380&t=st=1686193690~exp=1686194290~hmac=b4b3e05ab0ce9d93d6cdb6fb530d6d3bb451ad258fccb82866003ad57e179425",
+        "category": "Stand",
+        "price": "$79.99"
+      },
+      {
+        "id": 6,
+        "name": "Kung Fu",
+        "course": "Striking",
+        "image": "https://img.freepik.com/free-photo/people-outdoors-nature-training-taekwondo_23-2149908473.jpg?w=1380&t=st=1686205962~exp=1686206562~hmac=b9594425b0fdc80b551a88733de019e8814fe99beed2aa8256efc1bf789399d7",
+        "category": "Traditional",
+        "price": "$99.99"
+      },
+      {
+        "id": 7,
+        "name": "Krav Maga",
+        "course": "Self-defense",
+        "image": "https://img.freepik.com/free-photo/young-men-sportswear-wrestling-each-other_23-2149749740.jpg?w=1380&t=st=1686206115~exp=1686206715~hmac=f83038a05a798e2e61fecbb77aa9e4fc9225453877df6cf74142b03c1bb67317",
+        "category": "Hybrid",
+        "price": "$119.99"
+      },
+      {
+        "id": 8,
+        "name": "Capoeira",
+        "course": "Movement",
+        "image": "https://img.freepik.com/free-photo/men-training-capoeira-beach_52683-101105.jpg?w=1380&t=st=1686206197~exp=1686206797~hmac=65e9172db2195b03130b0015e1d91192ecb7b1d533a418aaef532a195b38e382",
+        "category": "Artistic",
+        "price": "$84.99"
+      },
+      {
+        "id": 9,
+        "name": "Judo",
+        "course": "Grappling",
+        "image": "https://img.freepik.com/free-photo/two-judokas-fighters-fighting-men_155003-2086.jpg?w=1380&t=st=1686206285~exp=1686206885~hmac=8899e4d671ce333bed2fd1a91702d075685b7616d323db01102d48c5e064c0e0",
+        "category": "SelfDefense",
+        "price": "$94.99"
+      },
+      {
+        "id": 10,
+        "name": "Kickboxing",
+        "course": "Striking",
+        "image": "https://img.freepik.com/free-photo/male-boxer-boxing-punching-bag_155003-6126.jpg?w=1380&t=st=1686206351~exp=1686206951~hmac=4b3ff30c34131c9ce2e6ce1d9f88cd236511c133de262eb291388842f7b92258",
+        "category": "Hybrid",
+        "price": "$89.99"
+      },
+      {
+        "id": 11,
+        "name": "Wing Chun",
+        "course": "Striking",
+        "image": "https://img.freepik.com/free-photo/front-view-people-practicing-tai-chi-indoors_23-2149960127.jpg?w=1380&t=st=1686206528~exp=1686207128~hmac=301c88a3a257c7fbe195be9c0731c51268c2ad90fa7016b3e9cdd930738c5653",
+        "category": "Traditional",
+        "price": "$99.99"
+      },
+      {
+        "id": 12,
+        "name": "Aikido",
+        "course": "Grappling",
+        "image": "https://img.freepik.com/free-photo/two-men-fighting-aikido-training-martial-arts-school_155003-44527.jpg?w=1380&t=st=1686206631~exp=1686207231~hmac=d17bce81afe063869c8432a1d9c10b362864092f3d85858a6eb86f7c86184d72",
+        "category": "SelfDefense",
+        "price": "$94.99"
+      }
+]
+  

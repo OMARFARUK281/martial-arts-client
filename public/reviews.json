@@ -1,0 +1,75 @@
+[
+      {
+        "id": 1,
+        "name": "Karate",
+        "details": "Karate is a martial art developed in Japan that emphasizes striking techniques such as punching, kicking, knee strikes, and elbow strikes.",
+        "rating": 4.5
+      },
+      {
+        "id": 2,
+        "name": "Taekwondo",
+        "details": "Taekwondo is a Korean martial art known for its emphasis on high, fast kicks and spinning kicks, as well as a variety of hand techniques.",
+        "rating": 4.2
+      },
+      {
+        "id": 3,
+        "name": "Brazilian Jiu-Jitsu",
+        "details": "Brazilian Jiu-Jitsu is a grappling-based martial art that focuses on ground fighting and submission holds, emphasizing technique and leverage.",
+        "rating": 4.8
+      },
+      {
+        "id": 4,
+        "name": "Muay Thai",
+        "details": "Muay Thai is a combat sport from Thailand that incorporates strikes using fists, elbows, knees, and shins, as well as clinching techniques.",
+        "rating": 4.7
+      },
+      {
+        "id": 5,
+        "name": "Boxing",
+        "details": "Boxing is a martial art and combat sport that primarily involves punches, footwork, and head movement, practiced both competitively and for self-defense.",
+        "rating": 4.3
+      },
+      {
+        "id": 6,
+        "name": "Kung Fu",
+        "details": "Kung Fu refers to a wide range of Chinese martial arts styles that incorporate various techniques such as strikes, kicks, throws, and joint locks.",
+        "rating": 4.6
+      },
+      {
+        "id": 7,
+        "name": "Krav Maga",
+        "details": "Krav Maga is a self-defense system developed for the Israeli military, focusing on practical techniques and real-world scenarios.",
+        "rating": 4.9
+      },
+      {
+        "id": 8,
+        "name": "Capoeira",
+        "details": "Capoeira is a Brazilian martial art that combines elements of dance, acrobatics, and music, characterized by fluid and agile movements.",
+        "rating": 4.4
+      },
+      {
+        "id": 9,
+        "name": "Judo",
+        "details": "Judo is a Japanese martial art that emphasizes throws and grappling techniques, aiming to use an opponent's strength and momentum against them.",
+        "rating": 4.7
+      },
+      {
+        "id": 10,
+        "name": "Kickboxing",
+        "details": "Kickboxing is a hybrid martial art that combines elements of boxing and karate, incorporating punches, kicks, knee strikes, and clinching techniques.",
+        "rating": 4.2
+      },
+      {
+        "id": 11,
+        "name": "Wing Chun",
+        "details": "Wing Chun is a traditional Chinese martial art known for its close-range combat techniques, efficient movements, and simultaneous attack and defense.",
+        "rating": 4.5
+      },
+      {
+        "id": 12,
+        "name": "Aikido",
+        "details": "Aikido is a Japanese martial art focused on using an opponent's energy and movements to gain control, using joint locks, throws, and pins.",
+        "rating": 4.1
+      }
+]
+  
