@@ -1,7 +1,54 @@
 import React from "react";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
+import Swal from "sweetalert2";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const MartialCard = ({item}) => {
     const { name, image, course, price } = item;
+    const {user} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const handleAddToClass = item =>{
+      console.log(item);
+      if(user && user.email){
+        const martialClass = {onlineClass: _id, name, image, price, email: user.email}
+        fetch('http://localhost:5000/carts', {
+          method: 'POST',
+          headers: {
+            'content-type': 'application/json'
+          },
+          body: JSON.stringify(martialClass)
+        })
+        .then(res => res.json())
+        .then(data => {
+          if(data.insertedId){
+            Swal.fire({
+              position: 'top-end',
+              icon: 'success',
+              title: 'Martial arts on the class',
+              showConfirmButton: false,
+              timer: 1500
+            })
+          }
+        })
+      }
+      else{
+        Swal.fire({
+          title: 'Please login to order the class',
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Login now!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            navigate('/login', {state: {from: location}})
+          }
+        })
+      }
+    }
 
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
@@ -20,7 +67,7 @@ const MartialCard = ({item}) => {
         </div>
         </div>
         <div className="card-actions justify-center">
-          <button className="btn border-0 border-b-4 border-red-500">Add to Cart</button>
+          <button onClick={() =>handleAddToClass(item)} className="btn border-0 border-b-4 border-red-500">Add to Cart</button>
         </div>
       </div>
       </div>

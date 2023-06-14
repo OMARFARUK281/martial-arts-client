@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import image from '../../../assets/martial-arts-logo.jpg'
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../provider/AuthProvider";
+import {FaDownload } from 'react-icons/fa';
 
 const NavBar = () => {
   const {user,  logOut} = useContext(AuthContext);
@@ -18,6 +19,14 @@ const NavBar = () => {
       <li><Link className="text-xl" to="/allclass">All Class</Link></li>
       <li><Link className="text-xl" to="/order">Order Now</Link></li>
       <li><Link className="text-xl" to="/secret">Secret</Link></li>
+      <li>
+        <Link to="/">
+          <button className="btn gap-2">
+          <FaDownload></FaDownload>
+            <div className="badge badge-secondary">+0</div>
+          </button>
+        </Link>
+      </li>
       
       {
         user ? <>
