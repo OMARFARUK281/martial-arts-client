@@ -1,17 +1,33 @@
-import React from "react";
+import React, { useContext } from "react";
 import image from '../../../assets/martial-arts-logo.jpg'
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../provider/AuthProvider";
 
 const NavBar = () => {
+  const {user,  logOut} = useContext(AuthContext);
 
-  const navOptions = (
+  const handleLogOut = () =>{
+    logOut()
+    .then(() =>{})
+    .catch(error => console.error(error));
+  }
+
+  const navOptions = 
     <>
       <li><Link className="text-xl" to="/">Home</Link></li>
       <li><Link className="text-xl" to="/allclass">All Class</Link></li>
       <li><Link className="text-xl" to="/order">Order Now</Link></li>
+      <li><Link className="text-xl" to="/secret">Secret</Link></li>
+      
+      {
+        user ? <>
+        <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
+        </> : <>
+        <li><Link className="text-xl" to="/login">Login</Link></li> 
+        </>
+      }
       
   </>
-  );
 
     
   return (
