@@ -3,17 +3,19 @@ import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import Swal from "sweetalert2";
 import { useLocation, useNavigate } from "react-router-dom";
+// import onlineCart from "../../hooks/onlineCart";
 
 const MartialCard = ({item}) => {
-    const { name, image, course, price } = item;
+    const { name, image, course, price, _id } = item;
     const {user} = useContext(AuthContext);
+    // const [, refetch ] = onlineCart();
     const navigate = useNavigate();
     const location = useLocation();
 
     const handleAddToClass = item =>{
       console.log(item);
       if(user && user.email){
-        const martialClass = {onlineClass: _id, name, image, price, email: user.email}
+        const martialClass = {martialArtsClassId: _id, name, image, price, email: user.email}
         fetch('http://localhost:5000/carts', {
           method: 'POST',
           headers: {
@@ -24,6 +26,7 @@ const MartialCard = ({item}) => {
         .then(res => res.json())
         .then(data => {
           if(data.insertedId){
+            refetch();
             Swal.fire({
               position: 'top-end',
               icon: 'success',

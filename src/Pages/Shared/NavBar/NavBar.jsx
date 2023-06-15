@@ -3,9 +3,12 @@ import image from '../../../assets/martial-arts-logo.jpg'
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../provider/AuthProvider";
 import {FaDownload } from 'react-icons/fa';
+import useCart from "../../../hooks/useCart";
+
 
 const NavBar = () => {
   const {user,  logOut} = useContext(AuthContext);
+  const [ cart ] = useCart();
 
   const handleLogOut = () =>{
     logOut()
@@ -19,11 +22,12 @@ const NavBar = () => {
       <li><Link className="text-xl" to="/allclass">All Class</Link></li>
       <li><Link className="text-xl" to="/order">Order Now</Link></li>
       <li><Link className="text-xl" to="/secret">Secret</Link></li>
+
       <li>
-        <Link to="/">
+        <Link to="/dashboard/mycart">
           <button className="btn gap-2">
           <FaDownload></FaDownload>
-            <div className="badge badge-secondary">+0</div>
+            <div className="badge badge-secondary">+{cart?.length || 0}</div>
           </button>
         </Link>
       </li>

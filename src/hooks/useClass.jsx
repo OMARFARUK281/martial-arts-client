@@ -5,13 +5,14 @@ const useClass = () => {
     const [loading, setLoading] = useState(true);
 
   useEffect( () => {
-    fetch('http://localhost:5000/menu')
+    fetch('http://localhost:5000/martial')
     .then(res => res.json())
     .then(data => {
         setMartial(data)
         setLoading(false);
     });
   }, [])
+  
   return [martial, loading]
 };
 
